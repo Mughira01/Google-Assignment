@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.Main-container{
+    background-color: beige;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent{
+    width: 60%;
+    height: 400px;
+}
+
+.Google-box{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+.Google-title{
+    font-size: 3em;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 40px;
+    gap: 20px;
+}
+
+.input-box > input{
+    width: 400px;
+    background-color: transparent;
+    padding: 15px;
+}
+
+.input-box > button{
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s;
+}
+
+.input-box > button:hover{
+    background-color: blue;
+}
+
+.links-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.right{
+    display: flex;
+    gap: 15px;
+}
+
+.left select{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+}
+
+@media screen and (max-width: 1010px){
+    .Google-box{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .input-box > input{
+        margin-top: 10px;
+        padding-left: 5px;
+        flex-direction: column;
+        width: 400px;
+
+    }
+    
+}
+
+@media screen and (min-width:768px){
+    .Google-box{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .input-box > input{
+        margin-top: 10px;
+        padding-left: 5px;
+        flex-direction: column;
+        width: 400px;
+
+    }
+    
+}
+
+/* @media screen and (max-width:751px){
+
+    .content{
+        gap: 3px;
+        padding-top: 0;
+    }
+
+    .Google-title{
+        font-size: 2em;
+    }
+
+    .Google-box{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .input-box > input{
+        margin-top: 10px;
+        padding-left: 5px;
+        flex-direction: column;
+        width: 250px;
+
+    }
+
+    .links-box{
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+} */
+
+/* @media screen and (min-width:500px){
+
+    .content{
+        gap: 3px;
+        padding-top: 0;
+    }
+
+    .Google-title{
+        font-size: 2em;
+    }
+
+    .Google-box{
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .input-box > input{
+        margin-top: 10px;
+        padding-left: 5px;
+        flex-direction: column;
+        width: 250px;
+
+    }
+
+    .links-box{
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+} */
